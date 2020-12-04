@@ -1,4 +1,4 @@
-class ThingsController < ApplicationController
+class ThingsController < ActionController::Base
     def home
     end
     def about
