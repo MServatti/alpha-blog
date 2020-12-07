@@ -36,4 +36,11 @@ class ArticlesController < ApplicationController
         end
     end
 
+    def destroy
+        @article = Article.find(params[:id])
+        @article.destroy
+        redirect_to articles_path #to know the path that you should use, go to the console and: rails routes --expanded and find the route that you want and look at Prefix
+
+    end
+
 end
